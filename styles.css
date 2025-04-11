@@ -86,4 +86,13 @@ body{
     padding-top: 0.5rem;
     margin-top: 0;
 }
-  
+.footer{
+    background: black;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 2rem;
+}
+.footer p{
+    margin: 0;
+    font-size: 0.75em;
+}
