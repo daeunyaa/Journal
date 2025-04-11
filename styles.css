@@ -1,5 +1,58 @@
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
+    background: #fafafa;
+    margin: 0;
+    color: #151515;
 }
 
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    background: white;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .title {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  .text-center {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .main {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  
