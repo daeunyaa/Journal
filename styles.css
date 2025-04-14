@@ -71,8 +71,8 @@ body{
 }
 .article{
     width: 100%;
-    height: 100%;
-    margin: 1.5rem 0;
+    height:15em;
+    margin: 1.5em 0;
 }
 .date{
     font-size: 0.875em;
@@ -86,7 +86,12 @@ body{
     padding-top: 0.5rem;
     margin-top: 0;
 }
+.blog{
+  display: flex;
+  flex-direction: column;
+}
 .footer{
+  width: 100%;
     background: black;
     color: #FAFAFA;
     text-align: center;
@@ -94,10 +99,30 @@ body{
 }
 .footer p{
     margin: 0;
+    padding: 0;
     font-size: 0.75em;
 }
 .content{
+  /* border: 1px solid black; */
   display: grid;
+    grid-template: auto auto/2em 1fr 1fr 1fr 2em;
+    grid-column-gap: 1.5rem;
+  padding: 1em 0;
+}
+.blog1{
+  grid-column: 2/3;
+}
+.blog4{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.blog5{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.blog6{
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 @media (max-width: 675px) {
   .navigation {
