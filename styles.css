@@ -96,7 +96,9 @@ body{
     margin: 0;
     font-size: 0.75em;
 }
-
+.content{
+  display: grid;
+}
 @media (max-width: 675px) {
   .navigation {
     display: block;
