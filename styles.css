@@ -172,3 +172,23 @@ body{
 }
 
 }
+.close-btn {
+  display: none;
+}
+
+.open-btn,
+.close-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 675px) {
+  .menu {
+    display: none;
+  }
+
+  .open-btn {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+  }
+}
