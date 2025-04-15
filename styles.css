@@ -129,13 +129,22 @@ body{
     padding: 0;
     font-size: 0.75em;
 }
-.content{
+
+.content {
   /* border: 1px solid black; */
   display: grid;
-    grid-template: auto auto/2em 1fr 1fr 1fr 2em;
-    grid-column-gap: 1.5rem;
+  grid-template: auto auto/2em 1fr 1fr 1fr 2em;
+  grid-column-gap: 1.5rem;
   padding: 1em 0;
 }
+
+.more-blogs {
+  display: grid;
+  grid-template: auto auto/2em 1fr 1fr 1fr 2em;
+  grid-column-gap: 1.5rem;
+  padding: 1em 0;
+}
+
 .blog1{
   grid-column: 2/3;
 }
@@ -151,6 +160,15 @@ body{
   grid-column: 4/5;
   grid-row: 2/3;
 }
+
+.toggle-more {
+  width: 30px;
+  height: 20px;
+  margin-left: 50%;
+
+}
+
+
 @media (max-width: 675px) {
 .navigation {
   display: block;
@@ -161,14 +179,28 @@ body{
   flex-direction: column;
   align-items: start;
 }
-.first-center {
-  background: url(img/main.png);
-  background-size: cover;
-  background-position: bottom;
-  color: white;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+} 
+
+ .more-blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
+
+ .more-blogs {
+  display: none;
+}
+
+.toggle-more:checked ~ .more-blogs {
+  display: contents;
+}  
+
+
+
 
 }
